@@ -44,9 +44,28 @@ body {
     border-radius: 50%;
     z-index: 10px;
     cursor: pointer;
-    background-color: #fff;
-    font-size: 18px;
+    background-color: rgba(0, 0, 0, .1); 
+    font-size: 18px; 
+    color: rgba(0, 0, 0, .1);
   }
+  
+  .btn:hover,
+  .btn:focus {
+    color: black;
+    background-color: white;
+  }
+
+  .btn:focus {
+    outline: 1px solid black;
+  }
+    
+  .btn:prev {
+    left: 1rem;
+  }
+
+  .btn-next {
+    right: 1rem;
+  } 
   
   .btn:active {
     transform: scale(1.1);
